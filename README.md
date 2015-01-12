@@ -3,10 +3,10 @@
 Programme en c appelé "cat" qui réalise le même travail que la commande cat du système.
 
  Gére que les options:<br>
-  -b 
-  -e (uniquement les $ en fin de ligne)<ul>
-  -n
+  -b <br>
+  -e (uniquement les $ en fin de ligne)<br>
+  -n<br>
   
-  Fonctionnement: 
-  => Make re  <code>( dans le repertoire)
-  => ./cat -option1 -option2 fichier 
+  Fonctionnement: <br>
+ <code> =>  Make re (dans le repertoire)<br>
+ <code> => ./cat (-option1 -option2) fichier<br>  
