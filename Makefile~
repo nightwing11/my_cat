@@ -1,0 +1,28 @@
+##
+## Makefile for  in /Users/mouloudbenlalli/Google Drive/my_cat/benlal_m/my_cat
+## 
+## Made by BENLALI Mouloud
+## Login   <benlal_m@etna-alternance.net>
+## 
+## Started on  Tue Dec  9 20:35:21 2014 BENLALI Mouloud
+## Last update Tue Dec  9 20:36:35 2014 BENLALI Mouloud
+##
+CC =    gcc
+NAME =  cat
+SRC =	*.c
+FLAGS = -W -Wall -Werror
+OBJ =   $(SRC:%.c=%.o)
+RM =    rm -f
+
+$(NAME):
+	$(CC) $(FLAGS) -o $(NAME) $(SRC)
+
+all:    $(NAME)
+
+clean:
+	$(RM) $(OBJ)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re:     fclean all

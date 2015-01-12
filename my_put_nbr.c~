@@ -1,0 +1,35 @@
+/*
+** my_put_nbr.c for  in /home/benlal_m/libmy_01/benlal_m
+** 
+** Made by BENLALLI mouloud
+** Login   <benlal_m@etna-alternance.net>
+** 
+** Started on  Fri Oct 24 15:28:01 2014 BENLALLI mouloud
+** Last update Sat Nov  1 17:40:59 2014 BENLALLI mouloud
+*/
+void my_putchar(char c);
+void	my_put_nbr(int nb)
+{
+  int	nf;
+  int	nd;
+
+  if (nb == -2147483648)
+    {
+      my_putchar('-');
+      my_putchar(50);
+      nb = 147483648;
+    }
+  if (nb < 0)
+    {
+      my_putchar('-');
+      my_put_nbr(-nb);
+    }
+  else
+    {
+      nf = nb % 10;
+      nd = nb / 10;
+      if (nd != 0)
+	my_put_nbr(nd);
+    }
+  my_putchar(nf +'0');
+}
